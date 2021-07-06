@@ -7,9 +7,9 @@ import "./Auth.css";
 import { signIn } from "../../requests/request";
 
 interface AuthProps {
-    signIn: (arg0: (arg0: string) => void, arg1: object) => void;
+    signIn: (arg0: (a: string) => void, b: object) => void;
     authKey: string;
-    setAuthKey: (arg0: string) => void;
+    setAuthKey: (a: string) => void;
 }
 
 const Auth: React.FC<AuthProps> = ({ signIn, authKey, setAuthKey }) => {

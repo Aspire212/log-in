@@ -1,4 +1,4 @@
-function signIn(setKey: (arg0: string) => void, bodyOption: any): void {
+function signIn(setKey: (a: string) => void, bodyOption: any): void {
     fetch("https://tager.dev.ozitag.com/api/auth/user", {
         method: "POST",
         headers: {
@@ -19,7 +19,7 @@ function signIn(setKey: (arg0: string) => void, bodyOption: any): void {
         .catch((error) => console.log(error));
 }
 
-function getUserData(key: string, userData: (arg0: any) => void): void {
+function getUserData(key: string, userData: (a: any) => void): void {
     fetch("https://tager.dev.ozitag.com/api/tager/user/profile", {
         method: "GET",
         headers: {
@@ -32,7 +32,7 @@ function getUserData(key: string, userData: (arg0: any) => void): void {
         .catch((error) => console.log(error));
 }
 
-function signOut(setKey: (arg0: string) => void): void {
+function signOut(setKey: (a: string) => void): void {
     setKey("");
 }
 export { signIn, getUserData, signOut };

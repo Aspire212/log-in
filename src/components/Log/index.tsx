@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import { getUserData, signIn, signOut } from "../../requests/request";
 
 interface LogProps {
-    signOut: (arg0: (arg0: string) => void) => void;
+    signOut: (arg0: (a: string) => void) => void;
     authKey: string;
-    setAuthKey: (arg0: string) => void;
+    setAuthKey: (a: string) => void;
 }
 interface User {
     id: number;
