@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
     const [authKey, setAuthKey] = useState<string>("");
     return (
-        <Router>
+        <Router basename='/log-in-build'>
             <div className="App">
                 <Switch>
                     <Route exact path="/">
